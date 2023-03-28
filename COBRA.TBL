@@ -1,0 +1,113 @@
+	.DATA
+SNK1:
+	.word   30,50
+	.long   0e4bddH
+	.word   30,-9,07000H
+	.long   NJHG
+SNK1A:
+	.word   30,50
+	.long   0e74e1H
+	.word   30,-9,06000H
+	.long   NJHG
+SNK1B:
+	.word   30,50
+	.long   0e9809H
+	.word   30,-9,06000H
+	.long   NJHG
+SNKI1:
+	.word   30,12
+	.long   0ebb31H
+	.word   30,-28,06000H
+	.long   NJHG
+SNKI2:
+	.word   30,12
+	.long   0ec3a1H
+	.word   30,-28,06000H
+	.long   NJHG
+SNKI3:
+	.word   30,12
+	.long   0ecc11H
+	.word   30,-28,06000H
+	.long   NJHG
+SNKI4:
+	.word   30,12
+	.long   0ed481H
+	.word   30,-28,06000H
+	.long   NJHG
+SNKBLL:
+	.word   30,33
+	.long   0edcf1H
+	.word   0,0,06000H
+	.long   NJHG
+SNKM1:
+	.word   26,28
+	.long   0ef425H
+	.word   27,-41,06000H
+	.long   NJHG
+SNKM2:
+	.word   26,40
+	.long   0f0535H
+	.word   27,-41,06000H
+	.long   NJHG
+SNKTNG1:
+	.word   7,7
+	.long   0f1d95H
+	.word   4,-55,06000H
+	.long   NJHG
+SNKTNG2:
+	.word   7,11
+	.long   0f1ebbH
+	.word   4,-55,06000H
+	.long   NJHG
+SNKTNG3:
+	.word   6,14
+	.long   0f2089H
+	.word   5,-55,06000H
+	.long   NJHG
+SNKTNG4:
+	.word   6,14
+	.long   0f2281H
+	.word   2,-55,06000H
+	.long   NJHG
+SNK1PAL2:
+	.word   30,50
+	.long   0e4bddH
+	.word   0,0,07000H
+	.long   SNKPAL2
+GSK1:
+	.word   30,50
+	.long   0e4bddH
+	.word   0,0,07000H
+	.long   GLW1
+GSK2:
+	.word   30,50
+	.long   0e4bddH
+	.word   0,0,07000H
+	.long   GLW2
+GSK3:
+	.word   30,50
+	.long   0f2479H
+	.word   0,0,07000H
+	.long   GLW3
+SNKNULL:
+	.word   3,2
+	.long   02c4c4H
+	.word   0,0,02000H
+	.long   NJHG
+SNLDN1:
+	.word   29,65
+	.long   0f4d7dH
+	.word   29,-6,06000H
+	.long   NJHG
+SNLDN1A:
+	.word   29,65
+	.long   0f79abH
+	.word   29,-6,06000H
+	.long   NJHG
+SNKBLL1A:
+	.word   34,38
+	.long   0fa5d9H
+	.word   0,0,06000H
+	.long   NJHG
+	.TEXT
+

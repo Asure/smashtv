@@ -1,0 +1,193 @@
+	.DATA
+MTDMP:
+	.word   145,105
+	.long   010269edH
+	.word   71,-18,06000H
+	.long   MAPP
+SCRMP:
+	.word   145,106
+	.long   0103cec3H
+	.word   71,-18,06000H
+	.long   MAPP
+SNKMP:
+	.word   145,106
+	.long   010536ffH
+	.word   71,-18,06000H
+	.long   MAPP
+TVSTD:
+	.word   62,10
+	.long   01069f3bH
+	.word   95,-19,06000H
+	.long   MAPP
+MTDMN:
+	.word   80,10
+	.long   0106adc3H
+	.word   -58,-102,06000H
+	.long   MAPP
+SCRFC:
+	.word   63,10
+	.long   0106c083H
+	.word   -57,-102,06000H
+	.long   MAPP
+AIR1:
+	.word   24,22
+	.long   0106cf47H
+	.word   -62,-77,06000H
+	.long   MAPP
+AIR2:
+	.word   22,26
+	.long   0106dba7H
+	.word   62,-32,06000H
+	.long   MAPP
+MP1:
+	.word   52,10
+	.long   0106e90fH
+	.word   31,-111,06000H
+	.long   MNTR
+MP2:
+	.word   58,10
+	.long   0106f53fH
+	.word   33,-111,06000H
+	.long   MNTR
+MP3:
+	.word   68,10
+	.long   010702d7H
+	.word   39,-111,06000H
+	.long   MNTR
+DCBRS:
+	.word   74,10
+	.long   010712c7H
+	.word   -57,-102,06000H
+	.long   MAPP
+TVCLMP1:
+	.word   33,31
+	.long   0107241fH
+	.word   110,-25,06000H
+	.long   MNTR
+SGN1:
+	.word   49,10
+	.long   01073c19H
+	.word   29,-111,06000H
+	.long   MNTR
+MNTRPC1:
+	.word   73,11
+	.long   01074795H
+	.word   75,-12,06000H
+	.long   MNTR
+MNTRPC2:
+	.word   82,26
+	.long   01075a67H
+	.word   81,-110,06000H
+	.long   MNTR
+MNTRPC3:
+	.word   10,62
+	.long   01078c5fH
+	.word   83,-11,06000H
+	.long   MNTR
+GRLI1:
+	.word   22,9
+	.long   01079ae7H
+	.word   47,-34,06000H
+	.long   FIGCOL
+GRLI2:
+	.word   22,9
+	.long   01079f8bH
+	.word   47,-34,06000H
+	.long   FIGCOL
+GRLM1:
+	.word   16,8
+	.long   0107a42fH
+	.word   45,-48,06000H
+	.long   FIGCOL
+GRLM2:
+	.word   16,7
+	.long   0107a72fH
+	.word   45,-48,06000H
+	.long   FIGCOL
+GRLM3:
+	.word   16,7
+	.long   0107a9cfH
+	.word   45,-48,06000H
+	.long   FIGCOL
+MCI1:
+	.word   26,11
+	.long   0107ac6fH
+	.word   14,-29,06000H
+	.long   FIGCOL
+MCI2:
+	.word   26,11
+	.long   0107b323H
+	.word   14,-29,07000H
+	.long   FIGCOL
+MCM1:
+	.word   18,10
+	.long   0107baf5H
+	.word   10,-46,06000H
+	.long   FIGCOL
+MCM2:
+	.word   18,10
+	.long   0107bf2dH
+	.word   10,-46,06000H
+	.long   FIGCOL
+MCM3:
+	.word   18,10
+	.long   0107c365H
+	.word   10,-47,06000H
+	.long   FIGCOL
+FIGS1:
+	.word   72,110
+	.long   0107c79dH
+	.word   73,-17,06000H
+	.long   FIGCOL
+MNY1:
+	.word   19,25
+	.long   0108813dH
+	.word   73,-56,06000H
+	.long   MNTR
+MNY2:
+	.word   27,11
+	.long   01088c5fH
+	.word   47,-71,06000H
+	.long   MNTR
+MNY3:
+	.word   19,25
+	.long   01089355H
+	.word   13,-84,06000H
+	.long   MNTR
+MNY4:
+	.word   20,22
+	.long   01089e77H
+	.word   19,-55,06000H
+	.long   MNTR
+MNY5:
+	.word   75,38
+	.long   0108a8c7H
+	.word   75,-89,06000H
+	.long   MNTR
+GRLI3:
+	.word   22,9
+	.long   0108eb93H
+	.word   47,-34,06000H
+	.long   FIGCOL
+MCI3:
+	.word   26,11
+	.long   0108f037H
+	.word   14,-29,06000H
+	.long   FIGCOL
+GLRM1:
+	.word   40,44
+	.long   0108f6ebH
+	.word   41,-59,06000H
+	.long   FIGCOL
+GLRM2:
+	.word   46,19
+	.long   0109202bH
+	.word   43,-85,06000H
+	.long   FIGCOL
+MCI2A:
+	.word   26,11
+	.long   0107b323H
+	.word   11,-29,07000H
+	.long   FIGCOL
+	.TEXT
+

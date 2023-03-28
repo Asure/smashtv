@@ -1,0 +1,573 @@
+	.DATA
+GLSS1:
+	.word   38,21
+	.long   01111f00H
+	.word   40,-22,06000H
+	.long   FCE1
+GLSS2:
+	.word   38,24
+	.long   011131b4H
+	.word   39,-20,06000H
+	.long   FCE1
+GLSS3:
+	.word   38,24
+	.long   01114714H
+	.word   39,-20,06000H
+	.long   FCE1
+GLSS4:
+	.word   38,22
+	.long   01115c74H
+	.word   39,-22,06000H
+	.long   FCE1
+GLSS5:
+	.word   38,20
+	.long   0111700cH
+	.word   39,-24,06000H
+	.long   FCE1
+GLSS6:
+	.word   38,20
+	.long   011181dcH
+	.word   39,-24,06000H
+	.long   FCE1
+EYE1:
+	.word   40,21
+	.long   011193acH
+	.word   41,-41,06000H
+	.long   FCE2
+EYE2:
+	.word   40,21
+	.long   0111a75cH
+	.word   41,-41,06000H
+	.long   FCE2
+EYE3:
+	.word   40,21
+	.long   0111bb0cH
+	.word   41,-41,06000H
+	.long   FCE2
+EYE4:
+	.word   40,21
+	.long   0111cebcH
+	.word   41,-41,06000H
+	.long   FCE2
+EYE5:
+	.word   40,21
+	.long   0111e26cH
+	.word   41,-41,06000H
+	.long   FCE2
+EYE6:
+	.word   40,21
+	.long   0111f61cH
+	.word   41,-41,06000H
+	.long   FCE2
+EYE7:
+	.word   40,21
+	.long   011209ccH
+	.word   41,-41,06000H
+	.long   FCE2
+EYE8:
+	.word   40,21
+	.long   01121d7cH
+	.word   41,-41,06000H
+	.long   FCE2
+EYE9:
+	.word   40,21
+	.long   0112312cH
+	.word   41,-41,06000H
+	.long   FCE2
+EYE10:
+	.word   40,21
+	.long   011244dcH
+	.word   41,-41,06000H
+	.long   FCE2
+MTH1:
+	.word   36,28
+	.long   0112588cH
+	.word   37,-71,06000H
+	.long   FCE2
+MTH2:
+	.word   36,28
+	.long   0112702cH
+	.word   36,-71,06000H
+	.long   FCE2
+MTH3:
+	.word   36,28
+	.long   011287ccH
+	.word   36,-72,06000H
+	.long   FCE2
+MTH4:
+	.word   36,28
+	.long   01129f6cH
+	.word   36,-72,06000H
+	.long   FCE2
+MTH1A:
+	.word   36,28
+	.long   0112b70cH
+	.word   36,-72,06000H
+	.long   FCE2
+MTH1B:
+	.word   36,28
+	.long   0112ceacH
+	.word   36,-72,06000H
+	.long   FCE2
+MTH1C:
+	.word   36,28
+	.long   0112e64cH
+	.word   36,-72,06000H
+	.long   FCE2
+MTH4A:
+	.word   36,28
+	.long   0112fdecH
+	.word   36,-72,06000H
+	.long   FCE2
+MTH4B:
+	.word   36,28
+	.long   0113158cH
+	.word   36,-72,06000H
+	.long   FCE2
+MTH4C:
+	.word   36,28
+	.long   01132d2cH
+	.word   36,-72,06000H
+	.long   FCE2
+MTH2A:
+	.word   36,28
+	.long   011344ccH
+	.word   36,-71,06000H
+	.long   FCE2
+MTH2B:
+	.word   36,28
+	.long   01135c6cH
+	.word   36,-71,06000H
+	.long   FCE2
+MTH2C:
+	.word   36,28
+	.long   0113740cH
+	.word   36,-71,06000H
+	.long   FCE2
+CHCK1:
+	.word   18,10
+	.long   01138bacH
+	.word   37,-62,06000H
+	.long   FCE2
+CHCK1A:
+	.word   18,10
+	.long   01138fe4H
+	.word   37,-62,06000H
+	.long   FCE2
+CHCK1B:
+	.word   18,10
+	.long   0113941cH
+	.word   36,-62,06000H
+	.long   FCE2
+NSE1:
+	.word   19,10
+	.long   01139854H
+	.word   20,-62,06000H
+	.long   FCE2
+NSE1A:
+	.word   19,13
+	.long   01139cc8H
+	.word   20,-59,06000H
+	.long   FCE2
+NSE1B:
+	.word   19,13
+	.long   0113a292H
+	.word   20,-59,06000H
+	.long   FCE2
+NSE1C:
+	.word   19,13
+	.long   0113a85cH
+	.word   20,-59,06000H
+	.long   FCE2
+I1:
+	.word   7,7
+	.long   0113ae26H
+	.word   3,3,06000H
+	.long   FCE2
+I2:
+	.word   12,10
+	.long   0113af4cH
+	.word   5,4,06000H
+	.long   FCE2
+I3:
+	.word   14,11
+	.long   0113b21cH
+	.word   5,5,06000H
+	.long   FCE2
+I4:
+	.word   13,17
+	.long   0113b5b8H
+	.word   6,8,06000H
+	.long   FCE2
+I5:
+	.word   19,17
+	.long   0113bae6H
+	.word   11,9,06000H
+	.long   FCE2
+I6:
+	.word   17,19
+	.long   0113c278H
+	.word   9,10,06000H
+	.long   FCE2
+SHLL1:
+	.word   23,14
+	.long   0113ca0aH
+	.word   24,-15,06000H
+	.long   FCE1
+SHLL1A:
+	.word   23,14
+	.long   0113d196H
+	.word   24,-15,06000H
+	.long   FCE1
+SHLL1B:
+	.word   23,14
+	.long   0113d922H
+	.word   24,-15,06000H
+	.long   FCE1
+SHLL1C:
+	.word   23,14
+	.long   0113e0aeH
+	.word   24,-15,06000H
+	.long   FCE1
+SHLL1D:
+	.word   23,14
+	.long   0113e83aH
+	.word   24,-15,06000H
+	.long   FCE1
+SHLL2:
+	.word   22,20
+	.long   0113efc6H
+	.word   42,-18,06000H
+	.long   FCE1
+SHLL2A:
+	.word   22,20
+	.long   0113fa16H
+	.word   42,-18,06000H
+	.long   FCE1
+SHLL2B:
+	.word   22,20
+	.long   01140466H
+	.word   42,-18,06000H
+	.long   FCE1
+SHLL2C:
+	.word   22,20
+	.long   01140eb6H
+	.word   42,-18,06000H
+	.long   FCE1
+SHLL2D:
+	.word   22,20
+	.long   01141906H
+	.word   42,-18,06000H
+	.long   FCE1
+SHLL3:
+	.word   22,19
+	.long   01142356H
+	.word   55,-31,06000H
+	.long   FCE1
+SHLL3A:
+	.word   22,19
+	.long   01142d22H
+	.word   55,-31,06000H
+	.long   FCE1
+SHLL3B:
+	.word   22,19
+	.long   011436eeH
+	.word   55,-31,06000H
+	.long   FCE1
+SHLL3C:
+	.word   22,19
+	.long   011440baH
+	.word   55,-31,06000H
+	.long   FCE1
+SHLL3D:
+	.word   22,19
+	.long   01144a86H
+	.word   55,-31,06000H
+	.long   FCE1
+SHLL4:
+	.word   15,23
+	.long   01145452H
+	.word   59,-49,06000H
+	.long   FCE1
+SHLL4A:
+	.word   15,23
+	.long   01145c68H
+	.word   59,-49,06000H
+	.long   FCE1
+SHLL4B:
+	.word   15,23
+	.long   0114647eH
+	.word   59,-49,06000H
+	.long   FCE1
+SHLL4C:
+	.word   15,23
+	.long   01146c94H
+	.word   59,-49,06000H
+	.long   FCE1
+SHLL4D:
+	.word   15,23
+	.long   011474aaH
+	.word   59,-49,06000H
+	.long   FCE1
+SHLL5:
+	.word   18,26
+	.long   01147cc0H
+	.word   59,-70,06000H
+	.long   FCE1
+SHLL5A:
+	.word   18,26
+	.long   011487b8H
+	.word   59,-70,06000H
+	.long   FCE1
+SHLL5B:
+	.word   18,26
+	.long   011492b0H
+	.word   59,-70,06000H
+	.long   FCE1
+SHLL5C:
+	.word   18,26
+	.long   01149da8H
+	.word   59,-70,06000H
+	.long   FCE1
+SHLL5D:
+	.word   18,26
+	.long   0114a8a0H
+	.word   59,-70,06000H
+	.long   FCE1
+SHLL6:
+	.word   22,25
+	.long   0114b398H
+	.word   53,-87,06000H
+	.long   FCE1
+SHLL6A:
+	.word   22,25
+	.long   0114c07cH
+	.word   53,-87,06000H
+	.long   FCE1
+SHLL6B:
+	.word   22,25
+	.long   0114cd60H
+	.word   53,-87,06000H
+	.long   FCE1
+SHLL6C:
+	.word   22,25
+	.long   0114da44H
+	.word   53,-87,06000H
+	.long   FCE1
+SHLL6D:
+	.word   22,25
+	.long   0114e728H
+	.word   53,-87,06000H
+	.long   FCE1
+SHLL7:
+	.word   24,25
+	.long   0114f40cH
+	.word   41,-98,06000H
+	.long   FCE1
+SHLL7A:
+	.word   24,25
+	.long   0115021cH
+	.word   41,-98,06000H
+	.long   FCE1
+SHLL7B:
+	.word   24,25
+	.long   0115102cH
+	.word   41,-98,06000H
+	.long   FCE1
+SHLL7C:
+	.word   24,25
+	.long   01151e3cH
+	.word   41,-98,06000H
+	.long   FCE1
+SHLL7D:
+	.word   26,25
+	.long   01152c4cH
+	.word   43,-98,06000H
+	.long   FCE1
+SHLL8:
+	.word   21,20
+	.long   01153b88H
+	.word   22,-106,06000H
+	.long   FCE1
+SHLL8A:
+	.word   21,20
+	.long   01154560H
+	.word   22,-106,06000H
+	.long   FCE1
+SHLL8B:
+	.word   21,20
+	.long   01154f38H
+	.word   22,-106,06000H
+	.long   FCE1
+SHLL8C:
+	.word   21,20
+	.long   01155910H
+	.word   22,-106,06000H
+	.long   FCE1
+SHLL8D:
+	.word   21,20
+	.long   011562e8H
+	.word   22,-106,06000H
+	.long   FCE1
+GLSS5A:
+	.word   38,19
+	.long   01156cc0H
+	.word   39,-25,06000H
+	.long   FCE1
+MTH3A:
+	.word   36,28
+	.long   01157dacH
+	.word   36,-72,06000H
+	.long   FCE2
+MTH3B:
+	.word   36,28
+	.long   0115954cH
+	.word   36,-72,06000H
+	.long   FCE2
+MTH3C:
+	.word   36,28
+	.long   0115acecH
+	.word   36,-72,06000H
+	.long   FCE2
+FCSH1:
+	.word   35,17
+	.long   0115c48cH
+	.word   33,-91,06000H
+	.long   FCE1
+FCSH1A:
+	.word   35,17
+	.long   0115d27eH
+	.word   33,-91,06000H
+	.long   FCE1
+FCSH1B:
+	.word   35,17
+	.long   0115e070H
+	.word   33,-91,06000H
+	.long   FCE1
+FCSH1C:
+	.word   35,17
+	.long   0115ee62H
+	.word   33,-91,06000H
+	.long   FCE1
+FCSH2:
+	.word   16,31
+	.long   0115fc54H
+	.word   45,-65,06000H
+	.long   FCE1
+FCSH2A:
+	.word   16,31
+	.long   011607f4H
+	.word   45,-65,06000H
+	.long   FCE1
+FCSH2B:
+	.word   16,31
+	.long   01161394H
+	.word   45,-65,06000H
+	.long   FCE1
+FCSH2C:
+	.word   16,31
+	.long   01161f34H
+	.word   45,-65,06000H
+	.long   FCE1
+FCSH3:
+	.word   11,26
+	.long   01162ad4H
+	.word   45,-41,06000H
+	.long   FCE1
+FCSH3A:
+	.word   11,26
+	.long   01163188H
+	.word   45,-41,06000H
+	.long   FCE1
+FCSH3B:
+	.word   11,26
+	.long   0116383cH
+	.word   45,-41,06000H
+	.long   FCE1
+FCSH3C:
+	.word   11,26
+	.long   01163ef0H
+	.word   45,-41,06000H
+	.long   FCE1
+FCSH4:
+	.word   34,14
+	.long   011645a4H
+	.word   35,-32,06000H
+	.long   FCE1
+FCSH4A:
+	.word   34,14
+	.long   011650ccH
+	.word   35,-32,06000H
+	.long   FCE1
+FCSH4B:
+	.word   34,14
+	.long   01165bf4H
+	.word   35,-32,06000H
+	.long   FCE1
+FCSH4C:
+	.word   34,14
+	.long   0116671cH
+	.word   35,-32,06000H
+	.long   FCE1
+SKLLM1:
+	.word   36,28
+	.long   01167244H
+	.word   37,-71,06000H
+	.long   FCE3
+SKLLM1A:
+	.word   36,28
+	.long   011689e4H
+	.word   37,-71,06000H
+	.long   FCE3
+SKLLM1B:
+	.word   36,28
+	.long   0116a184H
+	.word   37,-71,06000H
+	.long   FCE3
+SKLLM1C:
+	.word   36,28
+	.long   0116b924H
+	.word   37,-71,06000H
+	.long   FCE3
+SKLLM2:
+	.word   36,28
+	.long   0116d0c4H
+	.word   37,-71,06000H
+	.long   FCE3
+SKLLM2A:
+	.word   36,28
+	.long   0116e864H
+	.word   37,-71,06000H
+	.long   FCE3
+SKLLM2B:
+	.word   36,28
+	.long   01170004H
+	.word   37,-71,06000H
+	.long   FCE3
+SKLLM2C:
+	.word   37,35
+	.long   011717a4H
+	.word   37,-64,06000H
+	.long   FCE3
+SKLLI1:
+	.word   40,30
+	.long   011735feH
+	.word   41,-41,06000H
+	.long   FCE3
+SKLLI1A:
+	.word   40,30
+	.long   0117521eH
+	.word   41,-41,06000H
+	.long   FCE3
+SKLLI1B:
+	.word   40,30
+	.long   01176e3eH
+	.word   41,-41,06000H
+	.long   FCE3
+SKLLI1C:
+	.word   41,33
+	.long   01178a5eH
+	.word   41,-41,06000H
+	.long   FCE3
+	.TEXT
+
