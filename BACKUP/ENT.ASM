@@ -1,4 +1,4 @@
-	.FILE	'ENT.ASM'
+	.FILE	"ENT.ASM"
 	.TITLE	"ROBO ENTER YOUR INITIALS AND CUSTOM OPERATOR MESSAGE"
 	.WIDTH	132
 	.OPTION	B,D,L,T
@@ -14,8 +14,8 @@
 
 	.INCLUDE	"MPROC.EQU"		;MPROC EQUATES
 	.INCLUDE	"DISP.EQU"		;DISPLAY PROC. EQUATES
-	.INCLUDE	"\VIDEO\SYS\SYS.INC"	;Z UNIT SYSTEM EQUATES
-	.INCLUDE	"\VIDEO\SYS\MACROS.HDR"	;MACROS DEFINITIONS
+	.include	"sys.inc"	;z unit system equates
+	.include	"macros.hdr"	;macros definitions
 	.INCLUDE	"IMGTBL.GLO"
 	.INCLUDE	"ROBO.EQU"
         .INCLUDE        "LINK.EQU"	        ;LINKY EQUATES
@@ -835,9 +835,9 @@ DONT_SHUTOFF
          JAUC    SUCIDE                         ;AND DIE!
 
 START_SPRAY
-         .WORD	>F3DE,>10,>80AD,0		;START SPRAY PAINT
+         .WORD	0F3DEH,010H,080ADH,0		;START SPRAY PAINT
 KIL_SPRY
-         .WORD	>F3DE,>10,>807F,0		;KILL SPRAY PAINT
+         .WORD	0F3DEH,010H,0807FH,0		;KILL SPRAY PAINT
 
 **************************************************************************
 *                                                                        *
@@ -1049,7 +1049,7 @@ DO_END
          MOVE    A0,*A13(ENT_COUNT),W           ;SET START COUNT TO ZERO TO
          RETS                                   ;SIGNAL END RECEIVED.
 
-BEEP_1   .WORD	>F3DF,>10,>80A2,0		;LOW BEEP 
+BEEP_1   .WORD	0F3DFH,010H,080A2H,0		;LOW BEEP 
 
 **************************************************************************
 *                                                                        *

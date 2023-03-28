@@ -1,0 +1,158 @@
+	.DATA
+MUG1:
+	.word   24,30
+	.long   01000000H
+	.word   12,-12,06000H
+	.long   MUTT
+MUG2:
+	.word   24,30
+	.long   010010e0H
+	.word   12,-12,06000H
+	.long   MUTT
+MUG3:
+	.word   25,29
+	.long   010021c0H
+	.word   13,-12,06000H
+	.long   MUTT
+MUG4:
+	.word   28,29
+	.long   010032beH
+	.word   15,-12,06000H
+	.long   MUTT
+MUG1A:
+	.word   24,31
+	.long   010045c6H
+	.word   12,-12,06000H
+	.long   MUTT
+MTNK1A:
+	.word   29,67
+	.long   01005736H
+	.word   28,-47,06000H
+	.long   MUTT
+MUG1B:
+	.word   24,30
+	.long   010084c0H
+	.word   12,-12,06000H
+	.long   MUTT
+TRS1A:
+	.word   33,57
+	.long   010095a0H
+	.word   33,-21,06000H
+	.long   MUTT
+MUG1C:
+	.word   24,30
+	.long   0100c1b6H
+	.word   12,-12,06000H
+	.long   MUTT
+TRS1:
+	.word   33,57
+	.long   0100d296H
+	.word   33,-21,06000H
+	.long   MUTT
+MARM1:
+	.word   34,66
+	.long   0100feacH
+	.word   56,-23,06000H
+	.long   MUTT
+MARM2:
+	.word   41,55
+	.long   01013344H
+	.word   63,-23,06000H
+	.long   MUTT
+MARM3:
+	.word   44,35
+	.long   0101681eH
+	.word   66,-24,06000H
+	.long   MUTT
+MARM4:
+	.word   36,45
+	.long   01018c36H
+	.word   54,-11,06000H
+	.long   MUTT
+MARM6A:
+	.word   37,73
+	.long   0101b22eH
+	.word   58,-24,06000H
+	.long   MUTT
+TRD1A:
+	.word   4,66
+	.long   0101f17cH
+	.word   32,-49,06000H
+	.long   MUTT
+TRD2A:
+	.word   4,66
+	.long   0101f7acH
+	.word   32,-48,06000H
+	.long   MUTT
+TRD3A:
+	.word   4,66
+	.long   0101fddcH
+	.word   32,-48,06000H
+	.long   MUTT
+TRD1:
+	.word   33,14
+	.long   0102040cH
+	.word   32,-114,06000H
+	.long   MUTT
+TRD2:
+	.word   33,13
+	.long   01020ee0H
+	.word   32,-115,06000H
+	.long   MUTT
+TRD3:
+	.word   33,13
+	.long   010218eeH
+	.word   32,-115,06000H
+	.long   MUTT
+SHAD:
+	.word   13,71
+	.long   010222fcH
+	.word   -29,-57,01000H
+	.long   MUTT
+SHAD2:
+	.word   59,6
+	.long   01022697H
+	.word   21,-128,01000H
+	.long   MUTT
+BEAM1:
+	.word   11,21
+	.long   010227f9H
+	.word   5,10,06000H
+	.long   MUTT
+BEAM2:
+	.word   15,20
+	.long   01022d63H
+	.word   8,10,06000H
+	.long   MUTT
+BEAM3:
+	.word   20,19
+	.long   0102346bH
+	.word   9,9,06000H
+	.long   MUTT
+BEAM4:
+	.word   17,13
+	.long   01023d53H
+	.word   8,6,06000H
+	.long   MUTT
+BEAMH1:
+	.word   14,15
+	.long   01024281H
+	.word   6,7,06000H
+	.long   MUTT
+BEAMH2:
+	.word   17,16
+	.long   0102476dH
+	.word   8,8,06000H
+	.long   MUTT
+BELLY1:
+	.word   30,20
+	.long   01024dcdH
+	.word   13,-80,06000H
+	.long   MUTT
+BELLY2:
+	.word   30,20
+	.long   01025bddH
+	.word   13,-79,06000H
+	.long   MUTT
+	.TEXT
+

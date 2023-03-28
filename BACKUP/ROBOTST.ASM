@@ -11,9 +11,9 @@
 **************************************************************************
 ;	.INCLUDE	"\VIDEO\ROBO\MPROC.EQU"		;MPROC EQUATES
 ;	.INCLUDE	"\VIDEO\ROBO\DISP.EQU"		;DISPLAY PROC. EQUATES
-	.INCLUDE	"\VIDEO\SYS\GSP.INC"	;GSP ASSEMBLER EQUATES
-	.INCLUDE	"\VIDEO\SYS\SYS.INC"	;Z UNIT SYSTEM EQUATES
-	.INCLUDE	"\VIDEO\SYS\MACROS.HDR"	;MACROS DEFINITIONS
+	.include	"gsp.inc"	;gsp assembler equates
+	.include	"sys.inc"	;z unit system equates
+	.include	"macros.hdr"	;macros definitions
 
 ;	.INCLUDE	"\VIDEO\ROBO\IMGTBL.GLO"
 ;	.INCLUDE	"STRING.H"
@@ -78,7 +78,7 @@ BUT_MAC	$MACRO  X,Y,RADIUS,COLOR,MASK,SHIFT,EXTEND
 	.LONG	:MASK:
 	.WORD	:SHIFT:
 	.WORD	:EXTEND:
-        $END
+        $ENDM
 
 STR_MAC	$MACRO  X,Y,STRING,COLOR,DIR
 	.WORD	:X:	
@@ -86,7 +86,7 @@ STR_MAC	$MACRO  X,Y,STRING,COLOR,DIR
 	.LONG	:STRING:
 	.WORD	:COLOR:
 	.WORD	:DIR:
-        $END
+        $ENDM
 
 VECMAC	$MACRO	COLOR,X1,Y1,X2,Y2
 	.WORD	:COLOR:
@@ -94,13 +94,13 @@ VECMAC	$MACRO	COLOR,X1,Y1,X2,Y2
 	.WORD	:Y1:
 	.WORD	:X2:
 	.WORD	:Y2:
-	$END
+	$ENDM
 
 DOTMAC	$MACRO	COLOR,X,Y
 	.WORD	:COLOR:
 	.WORD	:X:
 	.WORD	:Y:
-	$END
+	$ENDM
 
 RECTMAC	$MACRO	COLOR,X,Y,W,H
 	.WORD	:W:
@@ -108,7 +108,7 @@ RECTMAC	$MACRO	COLOR,X,Y,W,H
 	.WORD	:X:
 	.WORD	:Y:
 	.WORD	:COLOR:
-	$END
+	$ENDM
 
 CHIPMAC	$MACRO	NUM,X1,Y1,X2,Y2,X3,Y3,STRING,DIR,X4,Y4,STUFFED
 	.WORD	:NUM:
@@ -123,7 +123,7 @@ CHIPMAC	$MACRO	NUM,X1,Y1,X2,Y2,X3,Y3,STRING,DIR,X4,Y4,STUFFED
 	.WORD	:X4:
 	.WORD	:Y4:
 	.WORD	:STUFFED:
-	$END
+	$ENDM
 
 CMNUM		EQU	0
 CMLOC		EQU	CMNUM+16
@@ -160,7 +160,7 @@ RAM_CHIP $MACRO TAB_LINK,CHIP_NO, WIDTH, INTERLEAVE, START_ADDR, END_ADDR
          .LONG  :START_ADDR:
          .LONG  :END_ADDR:
 	.LONG	:TAB_LINK:
-         $END
+         $ENDM
 
 RAM_WDTH EQU 	000H                ; OFFSETS INTO RAM CHIP RECORD
 RAM_ITLV EQU	010H
@@ -200,7 +200,7 @@ ROM_CHIP $MACRO TAB_LINK,CHIP_NO, WIDTH, INTERLEAVE, START_ADDR, END_ADDR, CHECK
         .LONG  :END_ADDR:
 	.LONG	:TAB_LINK:
 
-         $END
+         $ENDM
 
 
 RANDOM_SEED EQU 5A5A5A5Ah              ; RAM TESTS: PSEUDO-RANDOM SEQUENCE
@@ -482,17 +482,17 @@ WAIT1
 PONTEST
 	FCALL	DSCRCLR,B6
 	
-GO_RED   MOVI    >7C00,A1
+GO_RED   MOVI    07C00H,A1
 	MOVE	A1,@COLRAM,W
 	MOVI	4000000,B6
 	CALLR	WAIT
 
-GO_GREEN MOVI    >3A0,A1
+GO_GREEN MOVI    03A0H,A1
 	MOVE	A1,@COLRAM,W
 	MOVI	4000000,B6
 	CALLR	WAIT
 
-GO_BLUE  MOVI    >1F,A1
+GO_BLUE  MOVI    01FH,A1
 	MOVE	A1,@COLRAM,W
 	MOVI	4000000,B6
 	CALLR	WAIT
@@ -668,7 +668,7 @@ COLORBAR:
          MOVK 	16, A2                     ; 5 BITS / COLOR
          MOVK  	8, A6                     ; # COLOR BARS
 CB3
-	ADDI	>F00,A1		;STEP TO NEXT PALETTE
+	ADDI	0F00H,A1		;STEP TO NEXT PALETTE
 	MOVE 	*A0+, A3                   ; STARTING COLOR
          MOVE 	*A0+, A4                   ; COLOR DECREMENT
 
@@ -763,7 +763,7 @@ DONEMASK		EQU	00100000H			;TEST SWITCH
 
 SWITCHTEST:
 ;	CALLA	WDOGDIS
-	MOVI	>60000,A13
+	MOVI	060000H,A13
 	MOVE	A13,@DONECNT,L
 	CLR	A13			; THE HOLD ME REGISTER
 	MOVE	A13,@SWSET1,L
@@ -2183,36 +2183,36 @@ SCRLP	MOVE	B2,*B3+,L
 
 * VIDEO CONTROL REGISTERS INITIAL VALUES
 INITDATA:
-	.WORD	>0015	; >C0000000 -- hesync
-	.WORD	>002d	; >C0000010 -- heblnk
-	.WORD	>00f3	; >C0000020 -- hsblnk
-	.WORD	>00fc	; >C0000030 -- htotal
-ENDVBLNK	EQU	>14
+	.WORD	00015H	; 0C0000000H -- hesync
+	.WORD	0002dH	; 0C0000010H -- heblnk
+	.WORD	000f3H	; 0C0000020H -- hsblnk
+	.WORD	000fcH	; 0C0000030H -- htotal
+ENDVBLNK	EQU	014H
     .WORD   0003H			; VESYNC
     .WORD   ENDVBLNK			; VEBLNK
     .WORD   0100H+ENDVBLNK		; VSBLNK
     .WORD   0120H			; VTOTAL
     .WORD   0F010H			; DPYCTL
 
-    .word   0FFFCh		;>C0000090 -- dpystrt
-    .word   HSINT		;>C00000A0 -- dpyint * INITIALLY HALF SCREEN
-    .word   20H			;>C00000B0 -- control
-    .word   00h			;>C00000C0 -- hstdata
-    .word   00h			;>C00000D0 -- hstadrl
-    .word   00h			;>C00000E0 -- hstadrh
-    .word   00h			;>C00000F0 -- hstctll
-    .word   00h			;>C0000100 -- hstctlh
-    .word   00h			;>C0000110 -- intenbl
-    .word   00h			;>C0000120 -- intpend
-    .word   00h			;>C0000130 -- convsp
-    .word   00h			;>C0000140 -- convdp
-    .word   PXSIZE		;>C0000150 -- psize
-    .word   00h			;>C0000160 -- pmask
-    .word   00h			;>C0000170 -- RESERVED
-    .word   00h			;>C0000180 -- RESERVED
-    .word   00h			;>C0000190 -- RESERVED
-    .word   00h			;>C00001A0 -- RESERVED
-    .word   00h			;>C00001B0 -- DPYTAP
+    .word   0FFFCh		;0C0000090H -- dpystrt
+    .word   HSINT		;0C00000A0H -- dpyint * INITIALLY HALF SCREEN
+    .word   20H			;0C00000B0H -- control
+    .word   00h			;0C00000C0H -- hstdata
+    .word   00h			;0C00000D0H -- hstadrl
+    .word   00h			;0C00000E0H -- hstadrh
+    .word   00h			;0C00000F0H -- hstctll
+    .word   00h			;0C0000100H -- hstctlh
+    .word   00h			;0C0000110H -- intenbl
+    .word   00h			;0C0000120H -- intpend
+    .word   00h			;0C0000130H -- convsp
+    .word   00h			;0C0000140H -- convdp
+    .word   PXSIZE		;0C0000150H -- psize
+    .word   00h			;0C0000160H -- pmask
+    .word   00h			;0C0000170H -- RESERVED
+    .word   00h			;0C0000180H -- RESERVED
+    .word   00h			;0C0000190H -- RESERVED
+    .word   00h			;0C00001A0H -- RESERVED
+    .word   00h			;0C00001B0H -- DPYTAP
 IDATAEND:
 
 **************************************************************************
@@ -2493,10 +2493,10 @@ SRAMCHIPS
 	.LONG	0
 
 PROMCHIPS
-	ROM_CHIP PROM1,0,0,0, 0FFE00000H, 0FFFFFFF0H, >015B	; U89
-	ROM_CHIP PROM2,1,0,0, 0FFE00008H, 0FFFFFFF8H, >6670	; U105
+	ROM_CHIP PROM1,0,0,0, 0FFE00000H, 0FFFFFFF0H, 0015BH	; U89
+	ROM_CHIP PROM2,1,0,0, 0FFE00008H, 0FFFFFFF8H, 06670H	; U105
 	.LONG	0
-	.WORD	>FEA4,>998F		 ;CHECKSUM ADJUST
+	.WORD	0FEA4H,0998FH		 ;CHECKSUM ADJUST
 
 IROMCHIPS
 	.EVEN
@@ -2547,8 +2547,8 @@ WDISTAB
 
 DUXPAL:
 	.word	 10
-	.word	>0,>7C00,>6739,>1F,>35AD,>77A0,>741A,>3A0
-	.word	>0,>10
+	.word	00H,07C00H,06739H,01FH,035ADH,077A0H,0741AH,03A0H
+	.word	00H,010H
 
 
 ;****************************************************************************
@@ -2556,7 +2556,7 @@ DUXPAL:
 ;*	    DIAGNOSTICS.						    *
 ;****************************************************************************
 
-	  .TITLE 'SYSFONT'
+	  .TITLE "SYSFONT"
 	.WIDTH	132
 	.OPTION	B,D,L,T
 	.MNOLIST

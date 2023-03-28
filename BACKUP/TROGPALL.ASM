@@ -1,5 +1,5 @@
 	.MLIB	"TROGMACS.LIB"
-	.FILE	'TROGPALL.ASM'
+	.FILE	"TROGPALL.ASM"
 	.TITLE	" <<< T R O G -- PALETTE ALLOCATOR V1.0 >>>"
 	.WIDTH	132
 	.OPTION	B,D,L,T
@@ -376,7 +376,7 @@ PLTX:
 ****	sll	24,A4
 ****	srl	24,A4
 ****	movk	1,A6
-****	movi	>100,A7		;A7 # of times to repeat plotting colors
+****	movi	0100H,A7		;A7 # of times to repeat plotting colors
 ****	cmp	A4,A6
 ****	jreq	GotColCt
 ****GetColCt:
@@ -405,7 +405,7 @@ PLTX:
 ****	BTST	15,A4
 ****	JRNE	PLTSPC1
 ****	MMFM	A1,A5,A6,A7,A8,A9,A10,A11,A12
-****	ADDI	>1000,A2
+****	ADDI	01000H,A2
 ****	MOVK	16,A4
 ****PLTSPL:
 ****	MMTM	A2,A5,A6,A7,A8,A9,A10,A11,A12

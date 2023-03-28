@@ -1,4 +1,4 @@
-	.FILE	'MPROC.ASM'
+	.FILE	"MPROC.ASM"
 	.TITLE	"GSP MULTI-PROCESSING SYSTEM VERSION 1.0 EUGENE P. JARVIS"
 
 **************************************************************************
@@ -18,9 +18,9 @@
 *
 * FILES REQUIRED FOR ASSEMBLY
 *
-        .INCLUDE	\VIDEO\SYS\GSP.INC	;GSP ASSEMBLER EQUATES
-        .INCLUDE	\VIDEO\SYS\SYS.INC	;ZUNIT SYSTEM EQUATES
-        .INCLUDE	\VIDEO\SYS\MACROS.HDR	;MACROS
+        .include	gsp.inc	;gsp assembler equates
+        .include	sys.inc	;zunit system equates
+        .include	macros.hdr	;macros
 	.INCLUDE MPROC.EQU			;MPROC EQUATES
 	.INCLUDE DISP.EQU
 *
@@ -73,7 +73,7 @@ PRCWTSRT
 *TOS IS WAKEUP ADDR ,A0 = SLEEP TIME
 *
 PRCSLP:
-	move	*SP+,A7,L		       ;CALLING PC->A7
+	move	*SP+,A7,L		       ;CALLING PC-0A7H
 PRCLSP:
 	move	A13,A1
 	addi	PDATA,A1
@@ -109,7 +109,7 @@ PRCD1A
 
 PRCD2:	
 	move	A13,A1
-	addi	>40,A1
+	addi	040H,A1
 	mmfm	A1,A7,A8,A9,A10,A11,A12	;wake, regs, stack ptr
 	jump	A7			;fire off proc
 
