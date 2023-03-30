@@ -15,10 +15,11 @@ asmfiles = glob.glob("*.ASM")
 tblfiles = glob.glob("*.TBL")
 macfiles = glob.glob("*.MAC")
 hdrfiles = glob.glob("*.HDR")
+hfiles = glob.glob("*.H")
 incfiles = glob.glob("*.INC")
 equfiles = glob.glob("*.EQU")
 
-for asmfile in (asmfiles + tblfiles + macfiles + hdrfiles + equfiles + incfiles):
+for asmfile in (asmfiles + tblfiles + macfiles + hdrfiles + equfiles + incfiles + hfiles):
     print(asmfile)
     f = open("old/{0}".format(asmfile), "r")
     out = open("{0}".format(asmfile), "w")
@@ -60,6 +61,12 @@ for asmfile in (asmfiles + tblfiles + macfiles + hdrfiles + equfiles + incfiles)
             out.write(line.lower().replace("\\video\\sys\\", ""))
         elif "video\\sys\\" in line.lower():
             out.write(line.lower().replace("video\\sys\\", ""))
+#        elif "\"\\video\\" in line.lower():
+#            out.write(line.upper().replace("\"\\video\\sys\\", "\"\\video\\sys\\yunit\\"))
+#        elif "\\video\\" in line.lower():
+#            out.write(line.upper().replace("\\video\\sys\\", "\\video\\sys\\yunit\\"))
+#        elif "video\\" in line.lower():
+#            out.write(line.upper().replace("video\\sys\\", "video\\sys\\yunit\\"))
         
         # Check for old-style hex literals, convert to new-style.
         elif len(hexliterals) > 0:
