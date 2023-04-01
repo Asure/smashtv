@@ -7,12 +7,12 @@
 *                                                                        *
 **************************************************************************
 
-YUNIT	EQU	0	;NOT A YUNIT
-;YUNIT	EQU 	1	;ITS YUNIT TIME...GO FOR IT DUDES!!!!
+;YUNIT	EQU	0	;NOT A YUNIT
+YUNIT	EQU 	1	;ITS YUNIT TIME...GO FOR IT DUDES!!!!
 
 
-DEBUG	EQU	1	;THIS VERSION IS CURRENTLY UNDER CONSTRUCTION
-;DEBUG	EQU	0	;ADD THIS BEFORE RELEASE!!!!!
+;DEBUG	EQU	1	;THIS VERSION IS CURRENTLY UNDER CONSTRUCTION
+DEBUG	EQU	0	;ADD THIS BEFORE RELEASE!!!!!
 
 
 
