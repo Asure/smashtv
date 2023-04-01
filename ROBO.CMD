@@ -55,7 +55,7 @@ MENU.OBJ
 MEMORY        			/* set up memory for sdb board */
 {
  SCRATCH	: org = 0x01000000,	len = 0x100000
- ROM		: org = 0xFFC00000,	len = 0x200000 
+ ROM		: org = 0xFFE00000,	len = 0x200000 
  ROM2		: org = 0xFFFF6000,	len = 0x8D00 
  TRAP31		: org = 0xFFFFFC00,	len = 0x400 
  IROM		: org = 0x02000000,	len = 0x400000 
