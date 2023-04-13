@@ -1,1 +1,1 @@
-load2.exe robo /e /di /fi /t=c:\tmp /x
+load2.exe roboy /p /di /fi /t=c:\tmp /x
