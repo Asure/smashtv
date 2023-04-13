@@ -14,6 +14,6 @@ for filename in os.listdir(directory):
         # Remove all lines containing the specified text pattern
         new_content = [line for line in file_content if ".word   00H" not in line]
 
-        # Write the updated content to the output file
+#        # Write the updated content to the output file
         with open(os.path.join(directory, filename), 'w') as file:
             file.writelines(new_content)
