@@ -1,18 +1,18 @@
 	.DATA
 BAT2:
-	.word   28,24,19,-12
+	.word   26,24,19,-12
 	.long   0213ca40H
 	.long   GRNTG
 BAT3:
-	.word   28,28,19,-11
+	.word   27,28,19,-11
 	.long   0213df40H
 	.long   GRNTG
 BAT4:
-	.word   20,27,9,-12
+	.word   17,27,9,-12
 	.long   0213f7c0H
 	.long   GRNTG
 BAT5:
-	.word   20,23,8,-13
+	.word   19,23,8,-13
 	.long   021408a0H
 	.long   GRNTG
 BAT6:
@@ -20,11 +20,11 @@ BAT6:
 	.long   02141700H
 	.long   GRNTG
 BAT7:
-	.word   28,26,17,-11
+	.word   26,26,17,-11
 	.long   02142840H
 	.long   GRNTG
 BAT8:
-	.word   20,32,11,-5
+	.word   19,32,11,-5
 	.long   02143f00H
 	.long   GRNTG
 SWING2:
