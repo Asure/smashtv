@@ -1,548 +1,439 @@
 	.DATA
 BAT2:
-	.word   26,24
-	.long   010daf76H
-	.word   19,-12,05000H
+	.word   28,24,19,-12
+	.long   0213ca40H
 	.long   GRNTG
 BAT3:
-	.word   27,28
-	.long   010dbba6H
-	.word   19,-11,05000H
+	.word   28,28,19,-11
+	.long   0213df40H
 	.long   GRNTG
 BAT4:
-	.word   17,27
-	.long   010dca6aH
-	.word   9,-12,05000H
+	.word   20,27,9,-12
+	.long   0213f7c0H
 	.long   GRNTG
 BAT5:
-	.word   19,23
-	.long   010dd361H
-	.word   8,-13,05000H
+	.word   20,23,8,-13
+	.long   021408a0H
 	.long   GRNTG
 BAT6:
-	.word   24,23
-	.long   010ddbeaH
-	.word   7,-13,05000H
+	.word   24,23,7,-13
+	.long   02141700H
 	.long   GRNTG
 BAT7:
-	.word   26,26
-	.long   010de6b2H
-	.word   17,-11,05000H
+	.word   28,26,17,-11
+	.long   02142840H
 	.long   GRNTG
 BAT8:
-	.word   19,32
-	.long   010df3e6H
-	.word   11,-5,05000H
+	.word   20,32,11,-5
+	.long   02143f00H
 	.long   GRNTG
 SWING2:
-	.word   23,27
-	.long   010dffc6H
-	.word   17,-17,05000H
+	.word   24,27,17,-17
+	.long   02145300H
 	.long   GRNTG
 SWING3:
-	.word   18,33
-	.long   010e0be7H
-	.word   12,-10,05000H
+	.word   20,33,12,-10
+	.long   02146740H
 	.long   GRNTG
 SWING4:
-	.word   17,33
-	.long   010e1781H
-	.word   12,-10,05000H
+	.word   20,33,12,-10
+	.long   02147be0H
 	.long   GRNTG
 SWING5:
-	.word   21,28
-	.long   010e2276H
-	.word   11,-18,05000H
+	.word   24,28,11,-18
+	.long   02149080H
 	.long   GRNTG
 SWING6:
-	.word   24,29
-	.long   010e2df2H
-	.word   11,-17,05000H
+	.word   24,29,11,-17
+	.long   0214a580H
 	.long   GRNTG
 SWING7:
-	.word   29,27
-	.long   010e3b8aH
-	.word   10,-17,05000H
+	.word   32,27,10,-17
+	.long   0214bb40H
 	.long   GRNTG
 SWING1:
-	.word   24,24
-	.long   010e4ad5H
-	.word   20,-19,05000H
+	.word   24,24,20,-19
+	.long   0214d640H
 	.long   GRNTG
 gb9w1a:
-	.word   23,23
-	.long   010e5615H
-	.word   13,-13,05000H
+	.word   24,23,13,-13
+	.long   0214e840H
 	.long   GRNTG
 gb9w2a:
-	.word   21,24
-	.long   010e606aH
-	.word   11,-13,05000H
+	.word   24,24,11,-13
+	.long   0214f980H
 	.long   GRNTG
 gb9w3a:
-	.word   21,24
-	.long   010e6a42H
-	.word   14,-13,05000H
+	.word   24,24,14,-13
+	.long   02150b80H
 	.long   GRNTG
 gb9w4a:
-	.word   21,25
-	.long   010e741aH
-	.word   16,-13,05000H
+	.word   24,25,16,-13
+	.long   02151d80H
 	.long   GRNTG
 gb9w5a:
-	.word   28,23
-	.long   010e7e5bH
-	.word   19,-13,05000H
+	.word   28,23,19,-13
+	.long   02153040H
 	.long   GRNTG
 gb9w6a:
-	.word   21,23
-	.long   010e8aefH
-	.word   15,-13,05000H
+	.word   24,23,15,-13
+	.long   02154460H
 	.long   GRNTG
 gb9w7a:
-	.word   18,24
-	.long   010e945eH
-	.word   12,-12,05000H
+	.word   20,24,12,-12
+	.long   021555a0H
 	.long   GRNTG
 gb10w1a:
-	.word   24,25
-	.long   010e9cceH
-	.word   10,-12,05000H
+	.word   24,25,10,-12
+	.long   021564a0H
 	.long   GRNTG
 gb10w2a:
-	.word   20,25
-	.long   010ea886H
-	.word   8,-12,05000H
+	.word   20,25,8,-12
+	.long   02157760H
 	.long   GRNTG
 gb10w3a:
-	.word   19,25
-	.long   010eb24aH
-	.word   12,-12,05000H
+	.word   20,25,12,-12
+	.long   02158700H
 	.long   GRNTG
 gb10w4a:
-	.word   22,25
-	.long   010ebb91H
-	.word   14,-12,05000H
+	.word   24,25,14,-12
+	.long   021596a0H
 	.long   GRNTG
 gb10w5a:
-	.word   26,26
-	.long   010ec64fH
-	.word   17,-11,05000H
+	.word   28,26,17,-11
+	.long   0215a960H
 	.long   GRNTG
 gb10w6a:
-	.word   23,25
-	.long   010ed383H
-	.word   14,-12,05000H
+	.word   24,25,14,-12
+	.long   0215c020H
 	.long   GRNTG
 gb10w7a:
-	.word   23,26
-	.long   010edebeH
-	.word   15,-11,05000H
+	.word   24,26,15,-11
+	.long   0215d2e0H
 	.long   GRNTG
 gb12w1a:
-	.word   20,29
-	.long   010eea6cH
-	.word   8,-10,05000H
+	.word   20,29,8,-10
+	.long   0215e660H
 	.long   GRNTG
 gb12w2a:
-	.word   17,29
-	.long   010ef5c0H
-	.word   7,-10,05000H
+	.word   20,29,7,-10
+	.long   0215f880H
 	.long   GRNTG
 gb12w3a:
-	.word   16,28
-	.long   010eff61H
-	.word   7,-10,05000H
+	.word   16,28,7,-10
+	.long   02160aa0H
 	.long   GRNTG
 gb12w4a:
-	.word   15,29
-	.long   010f0821H
-	.word   7,-10,05000H
+	.word   16,29,7,-10
+	.long   021618a0H
 	.long   GRNTG
 gb12w5a:
-	.word   17,29
-	.long   010f10a0H
-	.word   7,-11,05000H
+	.word   20,29,7,-11
+	.long   02162720H
 	.long   GRNTG
 gb12w6a:
-	.word   19,29
-	.long   010f1a41H
-	.word   7,-10,05000H
+	.word   20,29,7,-10
+	.long   02163940H
 	.long   GRNTG
 gb12w7a:
-	.word   20,29
-	.long   010f2504H
-	.word   7,-10,05000H
+	.word   20,29,7,-10
+	.long   02164b60H
 	.long   GRNTG
 gb8w1a:
-	.word   15,24
-	.long   010f3058H
-	.word   8,-17,05000H
+	.word   16,24,8,-17
+	.long   02165d80H
 	.long   GRNTG
 gb8w2a:
-	.word   18,23
-	.long   010f3760H
-	.word   11,-17,05000H
+	.word   20,23,11,-17
+	.long   02166980H
 	.long   GRNTG
 gb8w3a:
-	.word   14,23
-	.long   010f3f76H
-	.word   9,-18,05000H
+	.word   16,23,9,-18
+	.long   021677e0H
 	.long   GRNTG
 gb8w4a:
-	.word   15,24
-	.long   010f45c0H
-	.word   9,-19,05000H
+	.word   16,24,9,-19
+	.long   02168360H
 	.long   GRNTG
 gb8w5a:
-	.word   16,23
-	.long   010f4cc8H
-	.word   8,-19,05000H
+	.word   16,23,8,-19
+	.long   02168f60H
 	.long   GRNTG
 gb8w6a:
-	.word   13,23
-	.long   010f53f8H
-	.word   8,-19,05000H
+	.word   16,23,8,-19
+	.long   02169ae0H
 	.long   GRNTG
 gb8w7a:
-	.word   13,22
-	.long   010f59cfH
-	.word   9,-18,05000H
+	.word   16,22,9,-18
+	.long   0216a660H
 	.long   GRNTG
 gb6w1a:
-	.word   16,22
-	.long   010f5f65H
-	.word   7,-20,07000H
+	.word   16,22,7,-20
+	.long   0216b160H
 	.long   GRNTG
 GPURP:
-	.word   16,22
-	.long   010f5f65H
-	.word   7,-20,07000H
+	.word   16,22,7,-20
+	.long   0216b160H
 	.long   GRNTP
 gb6w2a:
-	.word   15,22
-	.long   010f6905H
-	.word   6,-20,05000H
+	.word   16,22,6,-20
+	.long   0216bc60H
 	.long   GRNTG
 gb6w3a:
-	.word   17,24
-	.long   010f6f77H
-	.word   6,-19,05000H
+	.word   20,24,6,-19
+	.long   0216c760H
 	.long   GRNTG
 gb6w4a:
-	.word   17,25
-	.long   010f776fH
-	.word   7,-17,05000H
+	.word   20,25,7,-17
+	.long   0216d660H
 	.long   GRNTG
 gb6w5a:
-	.word   16,23
-	.long   010f7fbcH
-	.word   6,-20,05000H
+	.word   16,23,6,-20
+	.long   0216e600H
 	.long   GRNTG
 gb6w6a:
-	.word   16,21
-	.long   010f86ecH
-	.word   6,-21,05000H
+	.word   16,21,6,-21
+	.long   0216f180H
 	.long   GRNTG
 gb6w7a:
-	.word   17,23
-	.long   010f8d7cH
-	.word   8,-19,05000H
+	.word   20,23,8,-19
+	.long   0216fc00H
 	.long   GRNTG
 HIT1:
-	.word   17,26
-	.long   010f951fH
-	.word   11,-8,05000H
+	.word   20,26,11,-8
+	.long   02170a60H
 	.long   GRNTG
 HIT2:
-	.word   16,26
-	.long   010f9dc1H
-	.word   10,-8,05000H
+	.word   16,26,10,-8
+	.long   02171aa0H
 	.long   GRNTG
 HIT3:
-	.word   24,26
-	.long   010fa5e1H
-	.word   12,-8,05000H
+	.word   24,26,12,-8
+	.long   021727a0H
 	.long   GRNTG
 HIT4:
-	.word   31,26
-	.long   010fb211H
-	.word   16,-8,05000H
+	.word   32,26,16,-8
+	.long   02173b20H
 	.long   GRNTG
 HIT5:
-	.word   33,29
-	.long   010fc1cfH
-	.word   17,-6,05000H
+	.word   36,29,17,-6
+	.long   02175520H
 	.long   GRNTG
 VHIT1:
-	.word   26,17
-	.long   010fd480H
-	.word   10,-13,05000H
+	.word   28,17,10,-13
+	.long   021775c0H
 	.long   GRNTG
 VHIT2:
-	.word   26,16
-	.long   010fdd22H
-	.word   10,-14,05000H
+	.word   28,16,10,-14
+	.long   021784a0H
 	.long   GRNTG
 VHIT3:
-	.word   26,24
-	.long   010fe542H
-	.word   10,-11,05000H
+	.word   28,24,10,-11
+	.long   021792a0H
 	.long   GRNTG
 VHIT4:
-	.word   26,31
-	.long   010ff172H
-	.word   12,-8,05000H
+	.word   28,31,12,-8
+	.long   0217a7a0H
 	.long   GRNTG
 VHIT5:
-	.word   29,33
-	.long   01100130H
-	.word   12,-7,05000H
+	.word   32,33,12,-7
+	.long   0217c2c0H
 	.long   GRNTG
 SPLOTCH5:
-	.word   31,25
-	.long   011013e1H
-	.word   19,-8,04000H
+	.word   32,25,19,-8
+	.long   0217e3c0H
 	.long   GRNTG
 SPLOTCH6:
-	.word   33,29
-	.long   01101ffdH
-	.word   18,-8,04000H
+	.word   36,29,18,-8
+	.long   0217fcc0H
 	.long   GRNTG
 SPLOTCH7:
-	.word   33,29
-	.long   01102ef1H
-	.word   18,-9,04000H
+	.word   36,29,18,-9
+	.long   02181d60H
 	.long   GRNTG
 SPLOTCH8:
-	.word   25,21
-	.long   01103de5H
-	.word   19,-8,04000H
+	.word   28,21,19,-8
+	.long   02183e00H
 	.long   GRNTG
 ARM1:
-	.word   7,6
-	.long   01104619H
-	.word   2,2,05000H
+	.word   8,6,2,2
+	.long   02185060H
 	.long   GRNTG
 ARM2:
-	.word   8,10
-	.long   011046ebH
-	.word   3,4,05000H
+	.word   8,10,3,4
+	.long   021851e0H
 	.long   GRNTG
 ARM3:
-	.word   12,10
-	.long   0110487bH
-	.word   5,5,05000H
+	.word   12,10,5,5
+	.long   02185460H
 	.long   GRNTG
 ARM4:
-	.word   19,11
-	.long   01104ad3H
-	.word   6,4,05000H
+	.word   20,11,6,4
+	.long   02185820H
 	.long   GRNTG
 ARM5:
-	.word   29,15
-	.long   01104ee8H
-	.word   14,8,05000H
+	.word   32,15,14,8
+	.long   02185f00H
 	.long   GRNTG
 ARM6:
-	.word   19,17
-	.long   01105767H
-	.word   11,9,05000H
+	.word   20,17,11,9
+	.long   02186e00H
 	.long   GRNTG
 ARM7:
-	.word   13,18
-	.long   01105db6H
-	.word   7,10,05000H
+	.word   16,18,7,10
+	.long   021878a0H
 	.long   GRNTG
 ARM8:
-	.word   18,14
-	.long   01106248H
-	.word   8,9,05000H
+	.word   20,14,8,9
+	.long   021881a0H
 	.long   GRNTG
 ARM9:
-	.word   17,9
-	.long   01106734H
-	.word   8,5,05000H
+	.word   20,9,8,5
+	.long   02188a60H
 	.long   GRNTG
 ARM10:
-	.word   7,6
-	.long   01106a31H
-	.word   3,2,05000H
+	.word   8,6,3,2
+	.long   02189000H
 	.long   GRNTG
 PC1:
-	.word   5,4
-	.long   01106b03H
-	.word   2,1,04000H
+	.word   8,4,2,1
+	.long   02189180H
 	.long   GRNTG
 PC2:
-	.word   6,5
-	.long   01106b53H
-	.word   2,2,05000H
+	.word   8,5,2,2
+	.long   02189280H
 	.long   GRNTG
 PC3:
-	.word   5,6
-	.long   01106be9H
-	.word   2,3,04000H
+	.word   8,6,2,3
+	.long   021893c0H
 	.long   GRNTG
 PC4:
-	.word   7,9
-	.long   01106c61H
-	.word   3,3,04000H
+	.word   8,9,3,3
+	.long   02189540H
 	.long   GRNTG
 PC5:
-	.word   8,10
-	.long   01106d5dH
-	.word   4,5,04000H
+	.word   8,10,4,5
+	.long   02189780H
 	.long   GRNTG
 PC6:
-	.word   6,8
-	.long   01106e9dH
-	.word   3,4,05000H
+	.word   8,8,3,4
+	.long   02189a00H
 	.long   GRNTG
 PC7:
-	.word   6,6
-	.long   01106f8dH
-	.word   2,2,05000H
+	.word   8,6,2,2
+	.long   02189c00H
 	.long   GRNTG
 PC8:
-	.word   4,4
-	.long   01107041H
-	.word   1,1,04000H
+	.word   4,4,1,1
+	.long   02189d80H
 	.long   GRNTG
 HD1:
-	.word   5,5
-	.long   01107081H
-	.word   1,2,05000H
+	.word   8,5,1,2
+	.long   02189e00H
 	.long   GRNTG
 HD2:
-	.word   9,8
-	.long   011070feH
-	.word   4,3,05000H
+	.word   12,8,4,3
+	.long   02189f40H
 	.long   GRNTG
 HD3:
-	.word   10,10
-	.long   01107266H
-	.word   5,5,05000H
+	.word   12,10,5,5
+	.long   0218a240H
 	.long   GRNTG
 HD4:
-	.word   14,13
-	.long   0110745aH
-	.word   6,6,05000H
+	.word   16,13,6,6
+	.long   0218a600H
 	.long   GRNTG
 HD5:
-	.word   12,11
-	.long   011077e8H
-	.word   5,4,05000H
+	.word   12,11,5,4
+	.long   0218ac80H
 	.long   GRNTG
 HD6:
-	.word   11,10
-	.long   01107a7cH
-	.word   5,4,05000H
+	.word   12,10,5,4
+	.long   0218b0a0H
 	.long   GRNTG
 HD7:
-	.word   7,8
-	.long   01107ca2H
-	.word   3,3,05000H
+	.word   8,8,3,3
+	.long   0218b460H
 	.long   GRNTG
 HD8:
-	.word   6,5
-	.long   01107dbaH
-	.word   2,2,05000H
+	.word   8,5,2,2
+	.long   0218b660H
 	.long   GRNTG
 HD9:
-	.word   5,4
-	.long   01107e50H
-	.word   0,0,05000H
+	.word   8,4,0,0
+	.long   0218b7a0H
 	.long   GRNTG
 LEG1:
-	.word   8,10
-	.long   01107eb4H
-	.word   5,4,05000H
+	.word   8,10,5,4
+	.long   0218b8a0H
 	.long   GRNTG
 LEG2:
-	.word   7,12
-	.long   01108044H
-	.word   4,7,05000H
+	.word   8,12,4,7
+	.long   0218bb20H
 	.long   GRNTG
 LEG3:
-	.word   7,15
-	.long   011081e8H
-	.word   3,7,05000H
+	.word   8,15,3,7
+	.long   0218be20H
 	.long   GRNTG
 LEG4:
-	.word   15,14
-	.long   011083f5H
-	.word   6,7,05000H
+	.word   16,14,6,7
+	.long   0218c1e0H
 	.long   GRNTG
 LEG5:
-	.word   22,14
-	.long   0110880fH
-	.word   8,7,05000H
+	.word   24,14,8,7
+	.long   0218c8e0H
 	.long   GRNTG
 LEG6:
-	.word   33,13
-	.long   01108e13H
-	.word   16,5,05000H
+	.word   36,13,16,5
+	.long   0218d360H
 	.long   GRNTG
 LEG7:
-	.word   19,17
-	.long   01109674H
-	.word   12,8,05000H
+	.word   20,17,12,8
+	.long   0218e200H
 	.long   GRNTG
 LEG8:
-	.word   21,14
-	.long   01109cc3H
-	.word   16,6,05000H
+	.word   24,14,16,6
+	.long   0218eca0H
 	.long   GRNTG
 LEG9:
-	.word   19,12
-	.long   0110a281H
-	.word   14,7,05000H
+	.word   20,12,14,7
+	.long   0218f720H
 	.long   GRNTG
 LEG10:
-	.word   18,11
-	.long   0110a6f5H
-	.word   11,5,05000H
+	.word   20,11,11,5
+	.long   0218fea0H
 	.long   GRNTG
 LEG11:
-	.word   10,7
-	.long   0110aad3H
-	.word   5,2,04000H
+	.word   12,7,5,2
+	.long   02190580H
 	.long   GRNTG
 GLOB1:
-	.word   4,4
-	.long   0110abebH
-	.word   0,0,03000H
+	.word   4,4,0,0
+	.long   02190820H
 	.long   GRNTG
 GLOB2:
-	.word   9,9
-	.long   0110ac1bH
-	.word   5,4,04000H
+	.word   12,9,5,4
+	.long   021908a0H
 	.long   GRNTG
 GLOB3:
-	.word   13,12
-	.long   0110ad5fH
-	.word   7,5,04000H
+	.word   16,12,7,5
+	.long   02190c00H
 	.long   GRNTG
 GLOB4:
-	.word   18,14
-	.long   0110afcfH
-	.word   9,7,04000H
+	.word   20,14,9,7
+	.long   02191200H
 	.long   GRNTG
 GLOB5:
-	.word   20,17
-	.long   0110b3bfH
-	.word   11,8,04000H
+	.word   20,17,11,8
+	.long   02191ac0H
 	.long   GRNTG
 GLOB6:
-	.word   25,21
-	.long   01103de5H
-	.word   13,10,04000H
+	.word   28,21,13,10
+	.long   02183e00H
 	.long   GRNTG
 VHIT1R:
-	.word   26,17
-	.long   010fd480H
-	.word   10,-13,05000H
+	.word   28,17,10,-13
+	.long   021775c0H
 	.long   BLODP
 	.TEXT
 

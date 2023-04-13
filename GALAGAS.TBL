@@ -1,98 +1,79 @@
 	.DATA
 GB1:
-	.word   19,21
-	.long   0117aa14H
-	.word   0,0,05000H
+	.word   20,21,0,0
+	.long   02242540H
 	.long   GALP
 GB2:
-	.word   19,21
-	.long   0117b1dfH
-	.word   0,0,05000H
+	.word   20,21,0,0
+	.long   02243260H
 	.long   GALP
 GB3:
-	.word   19,21
-	.long   0117b9aaH
-	.word   0,0,05000H
+	.word   20,21,0,0
+	.long   02243f80H
 	.long   GALP
 GB4:
-	.word   19,21
-	.long   0117c175H
-	.word   0,0,05000H
+	.word   20,21,0,0
+	.long   02244ca0H
 	.long   GALP
 GB5:
-	.word   19,21
-	.long   0117c940H
-	.word   0,0,05000H
+	.word   20,21,0,0
+	.long   022459c0H
 	.long   GALP
 GALC1:
-	.word   26,26
-	.long   0117d10bH
-	.word   0,0,07000H
+	.word   28,26,0,0
+	.long   022466e0H
 	.long   GALP
 GALC2:
-	.word   26,26
-	.long   0117e387H
-	.word   0,0,06000H
+	.word   28,26,0,0
+	.long   02247da0H
 	.long   GALP
 GALC3:
-	.word   26,26
-	.long   0117f35fH
-	.word   0,0,06000H
+	.word   28,26,0,0
+	.long   02249460H
 	.long   GALP
 GALC4:
-	.word   26,26
-	.long   01180337H
-	.word   0,0,06000H
+	.word   28,26,0,0
+	.long   0224ab20H
 	.long   GALP
 GALC5:
-	.word   26,26
-	.long   0118130fH
-	.word   0,0,06000H
+	.word   28,26,0,0
+	.long   0224c1e0H
 	.long   GALP
 GA1:
-	.word   20,25
-	.long   011822e7H
-	.word   10,-24,00H
+	.word   20,25,10,-24
+	.long   0224d8a0H
 	.long   GALP
 GA2:
-	.word   19,25
-	.long   01183287H
-	.word   9,-23,04000H
+	.word   20,25,9,-23
+	.long   0224e840H
 	.long   GALP
 GA3:
-	.word   19,25
-	.long   011839f3H
-	.word   9,-23,04000H
+	.word   20,25,9,-23
+	.long   0224f7e0H
 	.long   GALP
 GA4:
-	.word   20,25
-	.long   0118415fH
-	.word   10,-22,04000H
+	.word   20,25,10,-22
+	.long   02250780H
 	.long   GALP
 GA5:
-	.word   19,26
-	.long   0118492fH
-	.word   10,-22,04000H
+	.word   20,26,10,-22
+	.long   02251720H
 	.long   GALP
 GA6:
-	.word   19,25
-	.long   011850e7H
-	.word   10,-23,04000H
+	.word   20,25,10,-23
+	.long   02252760H
 	.long   GALP
 GALC1A:
-	.word   26,26
-	.long   01185853H
-	.word   0,0,07000H
+	.word   28,26,0,0
+	.long   02253700H
 	.long   GALP2
 GA1B:
-	.word   20,25
-	.long   011822e7H
-	.word   10,-24,00H
+	.word   20,25,10,-24
+	.long   0224d8a0H
 	.long   GALP2
 SPHERE:
-	.word   10,16
-	.long   01186acfH
-	.word   0,0,04000H
+	.word   12,16,0,0
+	.long   02254dc0H
 	.long   GALP
 	.TEXT
 

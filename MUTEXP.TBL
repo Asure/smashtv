@@ -1,158 +1,126 @@
 	.DATA
 MUG1:
-	.word   24,30
-	.long   01000000H
-	.word   12,-12,06000H
+	.word   24,30,12,-12
+	.long   02000000H
 	.long   MUTT
 MUG2:
-	.word   24,30
-	.long   010010e0H
-	.word   12,-12,06000H
+	.word   24,30,12,-12
+	.long   02001680H
 	.long   MUTT
 MUG3:
-	.word   25,29
-	.long   010021c0H
-	.word   13,-12,06000H
+	.word   28,29,13,-12
+	.long   02002d00H
 	.long   MUTT
 MUG4:
-	.word   28,29
-	.long   010032beH
-	.word   15,-12,06000H
+	.word   28,29,15,-12
+	.long   02004660H
 	.long   MUTT
 MUG1A:
-	.word   24,31
-	.long   010045c6H
-	.word   12,-12,06000H
+	.word   24,31,12,-12
+	.long   02005fc0H
 	.long   MUTT
 MTNK1A:
-	.word   29,67
-	.long   01005736H
-	.word   28,-47,06000H
+	.word   32,67,28,-47
+	.long   02007700H
 	.long   MUTT
 MUG1B:
-	.word   24,30
-	.long   010084c0H
-	.word   12,-12,06000H
+	.word   24,30,12,-12
+	.long   0200ba00H
 	.long   MUTT
 TRS1A:
-	.word   33,57
-	.long   010095a0H
-	.word   33,-21,06000H
+	.word   36,57,33,-21
+	.long   0200d080H
 	.long   MUTT
 MUG1C:
-	.word   24,30
-	.long   0100c1b6H
-	.word   12,-12,06000H
+	.word   24,30,12,-12
+	.long   020110a0H
 	.long   MUTT
 TRS1:
-	.word   33,57
-	.long   0100d296H
-	.word   33,-21,06000H
+	.word   36,57,33,-21
+	.long   02012720H
 	.long   MUTT
 MARM1:
-	.word   34,66
-	.long   0100feacH
-	.word   56,-23,06000H
+	.word   36,66,56,-23
+	.long   02016740H
 	.long   MUTT
 MARM2:
-	.word   41,55
-	.long   01013344H
-	.word   63,-23,06000H
+	.word   44,55,63,-23
+	.long   0201b180H
 	.long   MUTT
 MARM3:
-	.word   44,35
-	.long   0101681eH
-	.word   66,-24,06000H
+	.word   44,35,66,-24
+	.long   0201fd20H
 	.long   MUTT
 MARM4:
-	.word   36,45
-	.long   01018c36H
-	.word   54,-11,06000H
+	.word   36,45,54,-11
+	.long   02022d40H
 	.long   MUTT
 MARM6A:
-	.word   37,73
-	.long   0101b22eH
-	.word   58,-24,06000H
+	.word   40,73,58,-24
+	.long   02025fe0H
 	.long   MUTT
 TRD1A:
-	.word   4,66
-	.long   0101f17cH
-	.word   32,-49,06000H
+	.word   4,66,32,-49
+	.long   0202bb20H
 	.long   MUTT
 TRD2A:
-	.word   4,66
-	.long   0101f7acH
-	.word   32,-48,06000H
+	.word   4,66,32,-48
+	.long   0202c360H
 	.long   MUTT
 TRD3A:
-	.word   4,66
-	.long   0101fddcH
-	.word   32,-48,06000H
+	.word   4,66,32,-48
+	.long   0202cba0H
 	.long   MUTT
 TRD1:
-	.word   33,14
-	.long   0102040cH
-	.word   32,-114,06000H
+	.word   36,14,32,-114
+	.long   0202d3e0H
 	.long   MUTT
 TRD2:
-	.word   33,13
-	.long   01020ee0H
-	.word   32,-115,06000H
+	.word   36,13,32,-115
+	.long   0202e3a0H
 	.long   MUTT
 TRD3:
-	.word   33,13
-	.long   010218eeH
-	.word   32,-115,06000H
+	.word   36,13,32,-115
+	.long   0202f240H
 	.long   MUTT
 SHAD:
-	.word   13,71
-	.long   010222fcH
-	.word   -29,-57,01000H
+	.word   16,71,-29,-57
+	.long   020300e0H
 	.long   MUTT
 SHAD2:
-	.word   59,6
-	.long   01022697H
-	.word   21,-128,01000H
+	.word   60,6,21,-128
+	.long   02032460H
 	.long   MUTT
 BEAM1:
-	.word   11,21
-	.long   010227f9H
-	.word   5,10,06000H
+	.word   12,21,5,10
+	.long   02032fa0H
 	.long   MUTT
 BEAM2:
-	.word   15,20
-	.long   01022d63H
-	.word   8,10,06000H
+	.word   16,20,8,10
+	.long   02033780H
 	.long   MUTT
 BEAM3:
-	.word   20,19
-	.long   0102346bH
-	.word   9,9,06000H
+	.word   20,19,9,9
+	.long   02034180H
 	.long   MUTT
 BEAM4:
-	.word   17,13
-	.long   01023d53H
-	.word   8,6,06000H
+	.word   20,13,8,6
+	.long   02034d60H
 	.long   MUTT
 BEAMH1:
-	.word   14,15
-	.long   01024281H
-	.word   6,7,06000H
+	.word   16,15,6,7
+	.long   02035580H
 	.long   MUTT
 BEAMH2:
-	.word   17,16
-	.long   0102476dH
-	.word   8,8,06000H
+	.word   20,16,8,8
+	.long   02035d00H
 	.long   MUTT
 BELLY1:
-	.word   30,20
-	.long   01024dcdH
-	.word   13,-80,06000H
+	.word   32,20,13,-80
+	.long   02036700H
 	.long   MUTT
 BELLY2:
-	.word   30,20
-	.long   01025bddH
-	.word   13,-79,06000H
-	.long   MUTT
+	.word   32,20,13,-79
+	.long   02037b00H
 	.TEXT
 
